@@ -22,7 +22,11 @@
 </head>
 <body>
 	<h1 align="center">Employee List</h1>
-
+	<c:if test="${success !=null}">
+		<h6 align="center">
+			<c:out value="${success}" />
+		</h6>
+	</c:if>
 	<table align="center" border="1">
 		<thead>
 			<tr>
